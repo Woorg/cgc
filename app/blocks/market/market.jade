@@ -2,7 +2,69 @@ mixin market()
 	section.market&attributes(attributes)
 		.market__in
 			h2.market__title(data-title="market") Мировой рынок золота в цифрах
+
 			.market__text
 				p Золото продолжает оставаться не просто одним из самых универсальных активов, но и одним из самых ценных. Ценность любого актива исчисляется его редкостью, а ликвидность актива — его покупательной способностью. Золото совмещает в себе оба эти параметра: являясь ценным металлом с ограниченной добычей, металл также считается резервным платежным средством, поскольку может быть обменен на любую валюту мира.
 
 				p Золото используется в бытовой электронике, стоматологии, ювелирной отрасли, производстве монет. ETF-фонды вкладывают деньги не только напрямую во фьючерсы на золото, а и в ценные бумаги компаний, работающих с металлом или его добывающим. Общий спрос на драгоценный металл составляет около 1000 тонн, его стоимость — 42,6 млрд дол.
+
+			.market__widget
+				h3.market__table-title Global gold demand per category
+
+				table.market__table
+					thead
+						tr
+							td Category
+							td Tonnes
+							td $US
+					tbody
+						tr
+							td Jewellery
+							td 493.1
+							td 21.161.4m
+
+						tr
+							td Investment
+							td 335.7
+							td 14.404.2m
+
+						tr
+							td Technology
+							td 82.3
+							td 3.534.0m
+
+						tr
+							td Central banks & financial institutes
+							td 81.7
+							td 3.504.3m
+
+						tr
+							td Total
+							td 992.8
+							td 42.603.9m
+
+				.market__source Источник: World Gold Council
+
+
+			.market__widget
+				.market__chart-title Contries with lagest gold reserve
+
+				.market__chart
+					.market__chart-obj
+						img(src="assets/images/general/gold-reserve-chart.png", alt="gold reserve chart")
+					ul.market__chart-list
+						li.market__chart-item.market__chart-item_1 35% USA
+						li.market__chart-item.market__chart-item_2 7% Russia
+						li.market__chart-item.market__chart-item_3 15% Germany
+						li.market__chart-item.market__chart-item_4 5% Switzerland
+						li.market__chart-item.market__chart-item_5 11% Italy
+						li.market__chart-item.market__chart-item_6 3% Japan
+						li.market__chart-item.market__chart-item_7 10% France
+						li.market__chart-item.market__chart-item_8 2,6% Netherlands
+						li.market__chart-item.market__chart-item_9 8% China
+						li.market__chart-item.market__chart-item_10 2,5% India
+
+			.market__widget
+				.market__graph-title Котировки золота за последние 5 лет
+
+				.market__graph

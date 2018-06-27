@@ -1,12 +1,14 @@
 .market
 	display block
+	overflow hidden
 	&__in
 		@extends .in
 		padding-top 89px
 		padding-bottom 89px
-		max-width 630px
 	&__title
 		@extends .title
+		margin-left 270px
+		margin-right 270px
 		margin-bottom 24px
 		text-align center
 		&:after
@@ -16,12 +18,156 @@
 			position absolute
 			z-index -1
 			bottom 8px
-			left 50%
-			width 100%
+			left 0
+			right 0
+			width 1000%
 			height 150px
 			content ''
 			background transparent linear-gradient(to top, #eee 0%, transparent 40%)
 			transform translateX(-50%)
 	&__text
 		@extends .wysiwyg
+		margin-left 270px
+		margin-right 270px
+		margin-bottom 44px
 		text-align center
+
+	&__widget
+		margin-bottom 68px
+
+	&__table-title
+		margin-bottom 7px
+		color #061428
+		font-family $sB
+		text-align center
+
+	&__table
+		margin auto
+		margin-bottom 10px
+		width 568px
+		text-align left
+		thead
+			background transparent
+			tr
+				min-height 40px
+				color #061428
+				font-family $sB
+			td
+				padding-top 13px
+				padding-bottom 16px
+				&:first-child
+					padding-left 35px
+					min-width 176px
+		tbody
+			tr
+				min-height 40px
+				color #FFF
+				&:first-child
+					td
+						&:first-child
+							border-radius 20px 0 0 0
+						&:last-child
+							border-radius 0 20px 0 0
+				&:last-child
+					td
+						&:first-child
+							border-radius 0 0 0 20px
+						&:last-child
+							border-radius 0 0 20px 0
+
+				&:nth-child(odd)
+					background-image linear-gradient(to right, #08166b 0%, #2181bd 100%)
+				&:nth-child(even)
+					background-image linear-gradient(to right, #2181bd 0%, #08166b 100%)
+			td
+				padding-top 13px
+				padding-bottom 16px
+				min-height 40px
+				&:first-child
+					padding-left 35px
+					min-width 268px
+				&:nth-child(2)
+					min-width 150px
+				&:last-child
+					min-width 100px
+
+	&__source
+		color #a5a5a5
+		text-align center
+
+	&__chart-title
+		margin-bottom 27px
+		color #061428
+		font-family $sB
+		text-align center
+
+	&__chart
+		margin-left auto
+		margin-right auto
+		margin-bottom 70px
+		width 902px
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items center
+
+	&__chart-obj
+		width 452px
+		text-align center
+		img
+			display inline-block
+	&__chart-list
+		padding-top 15px
+		width 418px
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items flex-start
+	&__chart-item
+		position relative
+		margin-bottom 30px
+		padding-left 36px
+		width 208px
+		color #000000
+		font-size 18px
+		&:after
+			position absolute
+			top 50%
+			left 0
+			content ''
+			background transparent
+			width 25px
+			height 25px
+			border-radius 50%
+			transform translateY(-50%)
+
+	&__chart-item_1
+		&:after
+			background #000000
+	&__chart-item_2
+		&:after
+			background #67ac30
+	&__chart-item_3
+		&:after
+			background #7b26c7
+	&__chart-item_4
+		&:after
+			background #ed7a06
+	&__chart-item_5
+		&:after
+			background #b13b6c
+	&__chart-item_6
+		&:after
+			background #34acde
+	&__chart-item_7
+		&:after
+			background #efd612
+	&__chart-item_8
+		&:after
+			background #d71d9d
+	&__chart-item_9
+		&:after
+			background #676ae6
+	&__chart-item_10
+		&:after
+			background #4ae7f7
