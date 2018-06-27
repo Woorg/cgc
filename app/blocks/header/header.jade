@@ -1,0 +1,88 @@
+mixin header()
+	header.header&attributes(attributes)
+		.header__in
+			.header__top
+				a.header__logo.logo(href="#logo")
+					img(src="assets/images/general/logo.png", alt="Central GOLD Coin")
+
+				.header__nav.nav
+
+					ul.nav__list
+						li.nav__item
+							a.nav__link(href="#link") VISION
+						li.nav__item
+							a.nav__link(href="#link") ROADMAP
+						li.nav__item
+							a.nav__link(href="#link") ICO
+						li.nav__item
+							a.nav__link(href="#link") TEAM
+						li.nav__item
+							a.nav__link(href="#link") ROADSHOW
+						li.nav__item
+							a.nav__link(href="#link") ADVISORS
+						li.nav__item
+							a.nav__link(href="#link") PRESS
+						li.nav__item
+							a.nav__link(href="#link") CONTACTS
+						li.nav__item
+							a.nav__link(href="#link") FAQ
+
+				.header__lang.lang
+					select.lang__select(name="")
+						option(value="En") Eng
+						option(value="Ru") Ru
+
+				.header__controls.h-controls
+					a.h-controls__link.button(href="#link") вход
+					a.h-controls__link.button.button_active.h-controls__link_active(href="#link") Регистрация
+
+			.header__body
+				.header__coin
+					img(src="assets/images/general/coin.gif", alt="Central GOLD Coin")
+					.header__coin-fullname Central GOLD Coin
+
+				.header__text
+					p Монеты обеспеченые физическим золотом
+					p «Central GOLD Coin» - это уникальная монета, которая имеет защищенную часть стоимости в физическом золоте.<br/> Приобретая наши монеты вы приобретаете право на физическое золото.<br/> Вы можете обменять приобретенные монеты на настоящее физическое золото в любой момент.
+
+				.header__counter.counter
+
+					.counter__title ICO  15 июня 2018
+
+					ul.counter__list
+						li.counter__item
+							.counter__num-w
+								#days.counter__num 00
+							.counter__item-title Days
+						li.counter__item
+							.counter__num-w
+								#hours.counter__num 00
+							.counter__item-title Hours
+						li.counter__item
+							.counter__num-w
+								#minutes.counter__num 00
+							.counter__item-title Min
+						li.counter__item
+							.counter__num-w
+								#seconds.counter__num 00
+							.counter__item-title Sec
+
+				ul.header__rating.rating
+					li.rating__item.rating__item_1
+						.rating__icon
+						.rating__text Positive
+					li.rating__item.rating__item_2
+						.rating__icon
+						.rating__text Gold Level
+					li.rating__item.rating__item_3
+						.rating__icon
+						.rating__text AA 4.5/5
+					li.rating__item.rating__item_4
+						.rating__icon
+						.rating__text 4.1
+					li.rating__item.rating__item_5
+						.rating__icon
+						.rating__text 5.0/5.0
+					li.rating__item.rating__item_6
+						.rating__icon
+						.rating__text 88/100

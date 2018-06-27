@@ -1,0 +1,9 @@
+include ../icon/icon
+
+mixin video()
+	.video&attributes(attributes)
+		.video__in
+			.video__player-w
+				.video__player
+					button.video__player-button
+						+icon('video-button', true).video__player-icon

@@ -1,6 +1,24 @@
 extends /blocks/layout-default/layout-default
 
+include /blocks/header/header
+include /blocks/video/video
+include /blocks/about/about
+include /blocks/advantages/advantages
+include /blocks/market/market
+
+
+include /blocks/footer/footer
+
+
+
 block head
-	- var pageTitle = 'CSSSR Project Template';
+	- var pageTitle = 'Central GOLD Coin';
 
 block content
+	+header()
+	+video()
+	+about()
+	+advantages()
+	+market()
+
+	+footer()
